@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>documentation_v3.txt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font: normal 12px/22px Arial, Helvetica, sans-serif;
+	color: #333;
+	margin: 0 auto;
+	padding: 30px 10px;
+	max-width: 960px;
+}
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: -1.5px;
+	margin-bottom: 25px;
+}
+h2 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+h3 {
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 32px 0 18px;
+}
+h2 + h3 {
+	margin-top: 18px;
+}
+h4 {
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+p {
+	margin: 18px 0;
+}
+a {
+	color: #0099ff;;
+	text-decoration: underline;
+}
+a:hover {
+	color: #ff6600;;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+ul, ol {
+	margin-left: 20px;
+}
+ul {
+	list-style: inside disc;
+}
+ol {
+	list-style: inside decimal;
+}
+hr {
+	border: none;
+	border-top: 1px dotted #868686;
+	margin: 18px 0;
+}
+pre {
+	border-left: 3px solid #eee;
+	background: #f6f6f6;
+	line-height: 20px;
+	margin: 18px 0;
+	padding: 5px 30px;
+	overflow: auto;
+}
+code {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #666;
+	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace;
+	padding: 3px 3px 2px;
+}
+pre code {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: none;
+	color: #333;
+	padding: 0;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 1px;
+	background: #eee;
+}
+th, td {
+	text-align: left;
+	padding: 4px 8px;
+}
+th {
+	background: #f6f6f6;
+	font-weight: bold;
+}
+td {
+	background: #fff;
+}
+</style>
+</head>
+<body>
+<h1>Fast Blog - WordPress theme documentation</h1>
+
+<p>Version: 1.5<br />
+Created: 22 December 2011<br />
+Website: <a href="http://themeforest.net/item/fast-blog/145138/">http://themeforest.net/item/fast-blog/145138/</a><br />
+Demo: <a href="http://themes.kubasto.com/fastblog/">http://themes.kubasto.com/fastblog/</a></p>
+
+<hr />
+
+<h2>Table of contents</h2>
+
+<div id="toc"></div>
+
+<hr />
+
+<h2>Introduction</h2>
+
+<p><em>Fast Blog</em> is a WordPress theme with some extra tumblr-like features. To take full advantage of it you need to install WooTumblog plugin (it's included). It's perfect for easy blogging and thanks to the plugin you can add posts quickly even from a mobile phone. There are 6 types of posts:</p>
+
+<ul>
+<li>article</li>
+<li>image</li>
+<li>link</li>
+<li>audio</li>
+<li>video</li>
+<li>qoute</li>
+</ul>
+
+<p>or you can create regular WordPress posts and pages too.</p>
+
+<p>If you want to manage your site from iPhone, I recommend <a href="http://itunes.apple.com/us/app/express-for-wordpress/id397596690?mt=8">Express for WordPress</a> - dedicated application for <a href="http://wordpress.org/extend/plugins/woo-tumblog/">WooTumblog</a>.</p>
+
+<hr />
+
+<h2>Instalation</h2>
+
+<p>Upload the contents of the fastblog folder to the <code>/wp-content/themes</code> folder on your server.<br />
+Activate the theme through the <em>Appearance / Themes</em> menu in WordPress.<br />
+Open the theme configuration page and set up theme options.  </p>
+
+<p>To install the WooTumblog plugin upload the contents of the woo-tumblog folder from the download package to the <code>/wp-content/plugins</code> folder on your server. You can also download newer version of <a href="http://wordpress.org/extend/plugins/woo-tumblog/">WooTumblog plugin</a> if avaliable.<br />
+Activate the plugin through the Plugins menu in WordPress.<br />
+After activating, configure settings it the Posts / Tumblog Options like on the image below:</p>
+
+<p><img src="res/tumblog_config.png" alt="" /></p>
+
+<p><strong>Important note</strong>: After activating the theme, please go to <em>Settings / Permalinks</em> and click <em>Save changes</em>.</p>
+
+<p>Enjoy your new theme!</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>How to create posts?</h3>
+
+<p>The best way to create all kinds of post is by the Tumblog panel on the Dashboard. It's very intuitive, have a look:</p>
+
+<p><img src="res/tubmlog_new_post.png" alt="" /></p>
+
+<h3>How to create posts with video?</h3>
+
+<p>If you want to use video from YouTube, vimeo or other video services, just paste the embedding code generated on theses services into <em>Embedded Video Code</em> filed on the Video type post.</p>
+
+<p>If you want to use self-hosted FLV video, or from some reason you want to use built-in player, paste link to the video file (if you want to use a preview image, set it as a featured image for this post). JWPlayer will be used to display this video.</p>
+
+<p><img src="res/tumblog_self_hosted_video.png" alt="" /></p>
+
+<h3>How to use shortcodes?</h3>
+
+<p>If you are not familiar with shortcodes, these are extra magic spells to use in text which can for example add a special icon or text box. You just start with opening shortcode, put some text or other stuff inside and write closing shotrcode on the end. To use shortcodes while post / page editing just write opening shortcode e.g. <code>[box icon="plus"]</code>, inside text, and closing shortcode: <code>[/box]</code>. Line shortcodes doesn't need to be closed. shortcode:</p>
+
+<p><img src="res/box.png" alt="" /></p>
+
+<p>There are 4 shortcodes with lots of paramets:</p>
+
+<table>
+    <tr>
+        <th>Shortcode</th>
+        <th>Parameter</th>
+        <th>Allowed values</th>
+        <th>Default value</th>
+    </tr>
+    <tr>
+        <td><code>line</code>, <code>hr</code></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="3"><code>cufon</code></td>
+        <td>size</td>
+        <td>[size]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>class</td>
+        <td>[css class]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>style</td>
+        <td>[css style]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><code>box</code></td>
+        <td>icon</td>
+        <td>none, address-book, arrow-back-red, arrow-back, arrow-red, arrow, bookmark, briefcase, chat, checkmark, clock, config, database-add, database-warning, database-x, database, exclamation, folder-add, folder-remove, folder, graph, heart-add, heart-x, heart, home, info, lifesaver, list, mail-add, mail-spam, mail-x, mail, mail_forward, mail_reply, music, no, paper-add, paper-arrow-back, paper-arrow, paper-pencil, paper-warning, paper-x, paper, pencil, person-add-black, person-add, person-black, person-group-add, person-group-warning, person-group-x, person-group, person-warning-black, person-warning, person-white-add, person-white-warning, person-white-x, person-white, person-x-black, person-x-white, person-x, person, photo, piechart, plus, questions, refresh, rss, screen, search, speech-bubble-add, speech-bubble-x, speech-bubble, warning, world-download, world-search, world, x</td>
+        <td>none</td>
+    </tr>
+    <tr>
+        <td>align</td>
+        <td>left, right</td>
+        <td>left</td>
+    </tr>
+    <tr>
+        <td rowspan="4"><code>column</code></td>
+        <td>type</td>
+        <td>[number]/[number]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>count</td>
+        <td>[number]</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>colspan</td>
+        <td>[number]</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>last</td>
+        <td>last, yes, 1</td>
+        <td></td>
+    </tr>
+</table>
+
+<p>You can preview all icons in the <code>/images/icons/</code> folder. You can also add new icons (48x48px) there – they will work the same way as all, just use their name as parameters value.</p>
+
+<p>If you want to learn more how to use shortcodes and watch examples, check them online on the <a href="http://themes.kubasto.com/fastblog/shortcodes/">Fast Blog demo</a>.</p>
+
+<h3>Why there are no shortlinks?</h3>
+
+<p>Structure of the site by sections, id's and classes.</p>
+
+<ol>
+<li>Make sure you have shortlinks activated in the theme's options.</li>
+<li>If posts were created before theme installation, edit them and save without making any changes.</li>
+<li>If there are still no shortlinks, probably your server doesn't support external request (<code>allow_url_fopen</code>).</li>
+</ol>
+
+<h3>How to remove Tumblog icons?</h3>
+
+<p>Paste the following code to the Custom CSS filed in Theme Options:</p>
+
+<pre><code>.post .post-icon { display: none; }
+.tumblog .post { padding-left: 20px; }
+</code></pre>
+
+<h3>How to create a new Tumblog-like category?</h3>
+
+<p>In the Posts / Categories section Add new Category,</p>
+
+<p>Extend file <code>schemes/[SCHEME]/images/post-icon.png</code> with a new icon (+117px width).
+Edit file <code>style.css</code> (or add code to <em>Custom CSS</em> field in the <em>Theme options / Advanced</em>):</p>
+
+<pre><code>.post.category-slug .post-icon.custom { background-position: -819px 0; }
+.post.category-slug .post-icon.custom a { background-position: -819px -103px; }
+</code></pre>
+
+<p>where the first number means new icon's X position and the second number – Y position in the <code>post-icon.png</code> file. Icon's size should be 117px x 103px, so if you add new icons, the first new one should have X position -819px, next one -936px, next one -1053px etc... There are Photoshop PSD files included to make icons editing easier. Remember to replace <code>slug</code> with the proper slug name.</p>
+
+<h3>How to edit category icons?</h3>
+
+<p>Edit file <code>/schemes/[SCHEME]/images/post-icon.png</code> (add new icons on the right). There are Photoshop PSD files included in the <code>/psd</code> folder to make it easier.</p>
+
+<p><img src="res/post_icons.png" alt="" /></p>
+
+<h3>How to replace custom font?</h3>
+
+<p><a href="http://cufon.shoqolate.com/generate/">Generate Cufón font</a> and upload it to the <code>/js/fonts/</code> folder. Now you can select it in the <em>Theme Options / Advanced / Cufón custom font</em>.</p>
+
+<h3>Why there are no tweets of Flickr images?</h3>
+
+<p>Probably your server has <code>allow_url_fopen</code> parameter switched off. Ask your hosting provider to turn it on, or try to do it by yourself (although it might not work): create file <code>.htaccess</code> on your server and paste following code inside it:
+php<em>value allow</em>url_fopen 1</p>
+
+<h3>How to translate tumblog's names?</h3>
+
+<p>In the <em>Posts / Tumblogs</em> section, edit chosen category and put translated name into the <em>name</em> field. Do not change the <em>slug</em> field.</p>
+
+<h3>Why there is "page not found" info when I click any Tumblog category icon?</h3>
+
+<p>Go to <em>Settings / Permalinks</em> and click <em>Save Changes</em> (don't change any settings).</p>
+
+<h3>How to add contact form?</h3>
+
+<p>Select <em>Contact form</em> as a template when you create or edit page.</p>
+
+<h3>How to make thumbnails of a Nextgen widget open in the Fancybox preview?</h3>
+
+<p>In the NextGen Gallery settings (<em>Gallery / Options / Effects</em>) select <em>Custom</em> for <em>JavaScript Thumbnail effect</em> and in the <em>Link Code line</em> paste:</p>
+
+<pre><code>class="fancybox"
+</code></pre>
+
+<h3>How to make a sidebar image to open in the Fancybox preview?</h3>
+
+<p>Add fancybox class to the image's hyperlink, e.g:</p>
+
+<pre><code>&lt;a href="big_image.jpg" class="fancybox"&gt;
+    &lt;img src="small_image.jpg" /&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>If more then one links inside the same widget will have that class, Fancybox gallery containing those images will be created automatically.</p>
+
+<h3>How to update the theme?</h3>
+
+<p>The best method would be: upload all files to your server, replacing the old ones. No data nor settings will be lost (unless you've made some custom changes to the files by yourself before).</p>
+
+<h3>Why i can't see uploaded tumblog images?</h3>
+
+<p>Try to uncheck <em>Enable Dynamic Image Resizer</em> option in <em>Posts / Tumblog Options</em>.</p>
+
+<h3>My audio files doesn’t play to the end / are cut off. Why?</h3>
+
+<p>It’s probably because the audio file has a variable bitrate, and the old JWPlayer (which is included to the WooTumlog) doesn't deal with that very well.</p>
+
+<p>You can easily update the player:</p>
+
+<ol>
+<li>Download the latest version from <a href="http://www.longtailvideo.com/players/jw-flv-player/">this site</a>. Before you download JW Player, make sure to uncheck "Include Viral, a video sharing plugin".</li>
+<li>Unpack, find the <code>player.swf</code> file and upload it to the <code>\wp-content\plugins\woo-tumblog\functions</code> folder on your server (replace the old one).</li>
+</ol>
+
+<h3>Why there is no audio player inside the post when I use Disqus comment system?</h3>
+
+<p>There is a conflict between <em>Disqus</em> and <em>WooTumblog</em>. To fix it, you will have to modify the code of one of the plugins. Replace line 667 of the <code>/wp-content/plugins/disqus-comment-system/disqus.php</code> file:</p>
+
+<pre><code>add_action('wp_head','dsq_get_style');
+</code></pre>
+
+<p>with this:</p>
+
+<pre><code>add_action('wp_head','dsq_get_style', 20);
+</code></pre>
+
+<p>I don't know why Disqus override WooTumblog <em>wp_head action</em>, but this modification solves the problem.</p>
+
+<h3>How to change size of images in the Tublog image-type posts?</h3>
+
+<p>You can set their size in: <em>Posts / Tumblog Options / Tumblog Image Width</em>.</p>
+
+<hr />
+
+<h2>Advanced customization</h2>
+
+<h3>Translating theme</h3>
+
+<p>For translations I recommend <a href="http://www.poedit.net/">Poedit</a> tool.</p>
+
+<p>Create a copy of the <code>xx_XX.po</code> file (from <code>/languages</code>) and rename it respectively to your language (check proper name <a href="http://www.gnu.org/software/autoconf/manual/gettext/Locale-Names.html">here</a>. For example Swiss German would be <code>de_CH.po</code>).</p>
+
+<ul>
+<li>Open that file in Poedit,</li>
+<li>select <em>Catalog / Update</em> from sources,</li>
+<li>translate,</li>
+<li>select language and country in <em>Catalog / Settings</em>,</li>
+<li>save.</li>
+</ul>
+
+<p><img src="res/poedit.png" alt="" /></p>
+
+<p>It seems a little harsh, but this is the proper way. If you need more details, <a href="http://codex.wordpress.org/User:Skippy/Creating_POT_Files">check here</a>.</p>
+
+<h3>Graphics editing</h3>
+
+<p>There is a lot of layered and sliced Photoshop <em>.psd</em> files prepared for you in the <code>/psd</code> folder. Some of them are common for all theme color versions and some are specific just for one and placed in the suitable folders.</p>
+
+<hr />
+
+<h2>Resources</h2>
+
+<p>External resources used:</p>
+
+<p><a href="http://wordpress.org/extend/plugins/woo-tumblog/">WooTumblog</a><br />
+<a href="http://jquery.com/">jQuery</a><br />
+<a href="http://cufon.shoqolate.com/">Cufón</a><br />
+<a href="http://fancybox.net/">FancyBox</a><br />
+<a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by <a href="http://icondock.com/">IconDock.com</a><br />
+Elegant Icons Created by <a href="http://www.elegantthemes.com/">Nicholas Roach</a><br />
+<a href="http://www.theleagueofmoveabletype.com/fonts/7-league-gothic">League-gothic</a> font<br />
+Myriad Pro font of <a href="http://www.adobe.com/">Adobe</a><br />
+<a href="http://derekweathersbee.com/franchise/">Franchise</a> font<br />
+<a href="http://www.fontsquirrel.com/fonts/Pincoyablack">Pincoyablack</a> font<br />
+<a href="http://www.fontsquirrel.com/fonts/Sansation">Sansation</a> font<br />
+<a href="http://www.fontspace.com/arro/vegur">Vegur</a> font</p>
+
+<hr />
+
+<h2>Changelog</h2>
+
+<p><strong>Fast Blog 1.5</strong></p>
+
+<ul>
+<li>added optional pagination inside posts</li>
+<li>added meta description tag of the site</li>
+<li>added YouTube links Fancybox support</li>
+<li>added bit.ly API key changing option</li>
+<li>updated social media icons set (33 new added)</li>
+<li>improved WooTumblog plugin support</li>
+<li>WordPress 3.3 ready</li>
+<li>new, extended documentation</li>
+<li>many other minor improvements</li>
+</ul>
+
+<p><strong>Fast Blog 1.4</strong></p>
+
+<ul>
+<li>added post archive template</li>
+<li>added author information below posts</li>
+<li>added new meta element – categories</li>
+<li>added option to hide post/page titles</li>
+<li>added option to display image's title in Fancybox</li>
+<li>added support for the following plugins: Livefyre Realtime Comments, Newsletter Sign-Up</li>
+<li>fixed <code>[box]</code> without any icon shortcode</li>
+<li>WordPress 3.2 ready</li>
+<li>other small improvements and fixes</li>
+</ul>
+
+<p><strong>Fast Blog 1.3</strong></p>
+
+<ul>
+<li>added more control over typography (Cufón) on a site</li>
+<li>added option to switch Cufón off</li>
+<li>added new shortcode <code>[cufon]</code></li>
+<li>added option to open sidebar images by Fancyfox</li>
+<li>updated included WooTumblog plugin to version 2.0.3</li>
+<li>added alternative (JavaScript) method for Twitter</li>
+<li>replaced Flowplayer with JWPlayer for self-hosted videos</li>
+<li>added support for Disqus and Intense Debate plugins</li>
+<li>fixed Facebook content reading issue while status publishing</li>
+<li>improved the look of a form of password protected posts</li>
+<li>improved the look of columns (shortcode) if used as a first element in the content</li>
+<li>fixed error with not displaying tumblog audio/video in posts</li>
+<li>fixed error causing page work slowly in IE8 browser</li>
+<li>other small improvements and fixes</li>
+</ul>
+
+<p><strong>Fast Blog 1.2.1</strong></p>
+
+<ul>
+<li>added option to turning tagline on and off</li>
+<li>fixed post meta icons</li>
+</ul>
+
+<p><strong>Fast Blog 1.2</strong></p>
+
+<ul>
+<li>added featured image for non-tumblog posts</li>
+<li>added author to post's meta</li>
+<li>added option for changing Cufón font and selectiong elements where to use it</li>
+<li>added 4 new custom fonts</li>
+<li>added name and e-mail address in the message's content sent from the contact form</li>
+<li>icon of regular WordPress posts links to the category of that post</li>
+<li>improved image attachment template</li>
+<li>archives list displays post's content, not excerpts</li>
+<li>fixed drop down menu error</li>
+</ul>
+
+<p><strong>Fast Blog 1.1</strong></p>
+
+<ul>
+<li>added option to change header's hight</li>
+<li>added viewing Fancybox multiple images (prev/next) in one post</li>
+<li>added option to switch Fancybox off</li>
+<li>added support for AddThis plugin</li>
+<li>better support for Facebook video tumbnails creating</li>
+<li>using excerpts on the posts list (if used)</li>
+<li>new chapters in this documentation</li>
+<li>fixed bug with Fancybox bad linking for not-image links</li>
+<li>minor fixes for Internet Explorer 9 beta</li>
+<li>theme options bug fixed (self checking check boxes)</li>
+</ul>
+
+<p><strong>Fast Blog 1.0</strong></p>
+
+<ul>
+<li>first release</li>
+</ul>
+
+<hr />
+
+<h2>Thank you</h2>
+
+<p>for purchasing this theme. If you have further questions don't hesitate to ask. The best way to contact me is the contact form on <a href="http://themeforest.net/user/kubasto/">my profile page</a>.<br />
+Kuba Sto</p>
+
+<script type="text/javascript" src="res/jquery.min.js"></script>
+
+<script type="text/javascript" src="res/doc.js"></script>
+
+</body>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+</html>
